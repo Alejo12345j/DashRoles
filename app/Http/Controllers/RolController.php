@@ -38,11 +38,15 @@ class RolController extends Controller
     public function store(Request $request)
     {
         //
-        $this->validate($request, ['name' => 'required', 'permission' => 'required']);
+        $this->validate($request, [
+            'name' => 'required|unique:roles,name',
+            'permission' => 'required',
+        ]);
+    
         $role = Role::create(['name' => $request->input('name')]);
-        $role ->syncPermissions($request->input('permission'));
-
-        return redirect() -> route('roles.index');
+        $role->syncPermissions($request->input('permissions'));
+    
+        return redirect()->route('roles.index');
     }
 
     public function show($id)
@@ -71,7 +75,7 @@ class RolController extends Controller
         $role->name = $request->input('name');
         $role->save();
 
-        $role -> syncPermissions($request -> input('permission'));
+        $role->permissions()->sync($request -> input('permission'));
         return redirect()->route('roles.index');
     }
 
