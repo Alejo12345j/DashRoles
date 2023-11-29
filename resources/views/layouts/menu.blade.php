@@ -11,4 +11,10 @@
     <a class="nav-link" href="/blogs">
         <i class=" fas fa-blog"></i><span>Blogs</span>
     </a>
+    <a class="nav-link" href="/equipos">
+        <i class=" fas fa-boxes"></i><span>Equipos</span>
+    </a>
+    <a class="nav-link" href="/estudiantes">
+        <i class=" fas fa-graduation-cap"></i><span>Estudiantes</span>
+    </a>
 </li>

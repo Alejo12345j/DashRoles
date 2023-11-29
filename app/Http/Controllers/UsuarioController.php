@@ -12,11 +12,18 @@ use Illuminate\Support\Arr;
 
 class UsuarioController extends Controller
 {
+    function __construct()
+    {
+         $this->middleware('permission:ver-usu|crear-usu|editar-usu|borrar-usu', ['only' => ['index']]);
+         $this->middleware('permission:crear-usu', ['only' => ['create','store']]);
+         $this->middleware('permission:editar-usu', ['only' => ['edit','update']]);
+         $this->middleware('permission:borrar-usu', ['only' => ['destroy']]);
+    }
 
     public function index()
     {
         //
-        $usuarios = User::paginate(5);
+        $usuarios = User::all();
         return view('usuarios.index', compact('usuarios'));
     }
 

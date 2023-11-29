@@ -47,9 +47,6 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            <div class="pagination justify-content-end">
-                                {!! $usuario->links !!}
-                            </div>
                         </div>
                     </div>
                 </div>
