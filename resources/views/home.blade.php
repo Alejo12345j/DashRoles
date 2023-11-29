@@ -69,7 +69,7 @@
                                     </div>
 
                                     <div class="col-md-4 col-xl-4">
-                                        <div class="card bg-warning  order-card">
+                                        <div class="card bg-dark  order-card">
                                             <div class="card-block">
                                                 <h5>Estudiantes</h5>                                               
                                                 @php
