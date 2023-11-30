@@ -10,17 +10,12 @@ use Spatie\Permission\Models\Role;
 
 class SuperAdminSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         //Este seeder nos sirve para crear un usuario y un rol para administrador sin tener nada en la base de datos.
         $usuario = User::create([
-            'name' => 'Marco Serrano', 
-            'email' => 'fertiequiposnh3@gmail.com',
+            'name' => 'Administrador', 
+            'email' => 'admin@gmail.com',
             'password' => bcrypt('12345678')
         ]);
 
