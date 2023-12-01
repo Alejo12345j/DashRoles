@@ -17,7 +17,7 @@
             position: relative;
             margin: 0;
             padding: 0;
-            background-image: url('https://nypost.com/wp-content/uploads/sites/2/2021/11/MIT.jpg?quality=90&strip=all');
+            background-image: url('https://images.e-flux-systems.com/112760_b4beeebd69f595751ff1e524105a8b37.jpg,1600');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -49,10 +49,10 @@
 
     <!-- Encabezado -->
     <header class="bg-indigo-500 text-white">
-        <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="container mx-auto flex justify-between items-center p-4 flex-wrap">
             <h1 class="text-xl underline-animation">Vanguard Institute of Technology (VIT)</h1>
             <nav>
-                <ul class="flex space-x-4">
+                <ul class="flex space-x-4 flex-row">
                     {{-- <li><a href="#" class="hover:text-blue-200">Acerca de Nosotros</a></li>
                     <li><a href="#" class="hover:text-blue-200">Admisiones</a></li>
                     <li><a href="#" class="hover:text-blue-200">Contacto</a></li> --}}
@@ -78,8 +78,8 @@
         <section>
             <section class="text-center py-8">
                 <div class="overflow-hidden mx-auto h-auto max-w-xl rounded-lg">
-                    <img src="https://images.e-flux-systems.com/112760_b4beeebd69f595751ff1e524105a8b37.jpg,1600" 
-                     alt="Imagen del Colegio" class="mx-auto transition transform duration-200 hover:scale-125 cursor-pointer">
+                    <img src="https://nypost.com/wp-content/uploads/sites/2/2021/11/MIT.jpg?quality=90&strip=all" 
+                     alt="Imagen del Colegio" class="mx-auto px-6 md:px-0 transition transform duration-200 hover:scale-125 cursor-pointer">
                 </div>
                 <h2 class="text-white text-3xl mt-4 font-semibold transition-colors duration-200 hover:text-blue-400">
                     Bienvenidos al Vanguard Institute of Technology</h2>
@@ -89,10 +89,10 @@
             <!-- Sección Acerca de Nosotros -->
             <section class="container mx-auto px-16 lg:px-32 xl:px-64 text-white">
                 <h3 class="text-2xl font-semibold mb-2 text-center">Acerca de Nosotros</h3>
-                <p class="text-justify tracking-tight">En el Vanguard Institute of Technology, nos enorgullecemos de ser una institución líder en el campo de la tecnología y la innovación. Inspirados por la excelencia y el espíritu pionero de instituciones renombradas como el MIT, nos dedicamos a forjar el futuro de la educación tecnológica.</p>
+                <p class="text-justify text-lg tracking-tight">En el Vanguard Institute of Technology, nos enorgullecemos de ser una institución líder en el campo de la tecnología y la innovación. Inspirados por la excelencia y el espíritu pionero de instituciones renombradas como el MIT, nos dedicamos a forjar el futuro de la educación tecnológica.</p>
                 <br>
                 <h3 class="text-2xl font-semibold mb-2 text-center">Nuestra Misión</h3>
-                <p class="text-justify tracking-tight" >Empoderar a las mentes más brillantes del mundo para abordar desafíos complejos y fomentar un cambio positivo. Creemos en la fusión de la teoría y la práctica, proporcionando a nuestros estudiantes una educación que no solo es rigurosa en lo académico, sino también rica en experiencias prácticas.</p>
+                <p class="text-justify text-lg tracking-tight" >Empoderar a las mentes más brillantes del mundo para abordar desafíos complejos y fomentar un cambio positivo. Creemos en la fusión de la teoría y la práctica, proporcionando a nuestros estudiantes una educación que no solo es rigurosa en lo académico, sino también rica en experiencias prácticas.</p>
                 <br>
             </section>
         </section>
