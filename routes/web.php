@@ -13,12 +13,25 @@ use App\Http\Controllers\EstudianteController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/usuarios', function () {
+    return view('usuarios');
+});
+Route::get('/roles', function () {
+    return view('usuarios');
+});
+Route::get('/blogs', function () {
+    return view('usuarios');
+});
+Route::get('/estudiantes', function () {
+    return view('usuarios');
+});
+Route::get('/equipos', function () {
+    return view('usuarios');
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
-
-Route::get('/home',[App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => ['auth']], function(){
     Route::resource('roles', RolController::class);

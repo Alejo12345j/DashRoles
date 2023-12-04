@@ -21,7 +21,7 @@
                                                 $cant_usuarios = User::count();                                                
                                                 @endphp
                                                 <h2 class="text-right"><i class="fa fa-users f-left"></i><span>{{$cant_usuarios}}</span></h2>
-                                                <p class="m-b-0 text-right"><a href="/usuarios" class="text-white">Ver más</a></p>
+                                                <p class="m-b-0 text-right"><a href="{{route('usuarios.index')}}" class="text-white">Ver más</a></p>
                                             </div>                                            
                                         </div>                                    
                                     </div>
@@ -35,7 +35,7 @@
                                                  $cant_roles = Role::count();                                                
                                                 @endphp
                                                 <h2 class="text-right"><i class="fa fa-user-lock f-left"></i><span>{{$cant_roles}}</span></h2>
-                                                <p class="m-b-0 text-right"><a href="/roles" class="text-white">Ver más</a></p>
+                                                <p class="m-b-0 text-right"><a href="{{route('roles.index')}}" class="text-white">Ver más</a></p>
                                             </div>
                                         </div>
                                     </div>                                                                
@@ -49,7 +49,7 @@
                                                 $cant_blogs = Blog::count();                                                
                                                 @endphp
                                                 <h2 class="text-right"><i class="fa fa-blog f-left"></i><span>{{$cant_blogs}}</span></h2>
-                                                <p class="m-b-0 text-right"><a href="/blogs" class="text-white">Ver más</a></p>
+                                                <p class="m-b-0 text-right"><a href="{{route('blogs.index')}}" class="text-white">Ver más</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -63,7 +63,7 @@
                                                 $cant_equipos = Equipo::count();                                                
                                                 @endphp
                                                 <h2 class="text-right"><i class="fa fa-boxes f-left"></i><span>{{$cant_equipos}}</span></h2>
-                                                <p class="m-b-0 text-right"><a href="/equipos" class="text-white">Ver más</a></p>
+                                                <p class="m-b-0 text-right"><a href="{{route('equipos.index')}}" class="text-white">Ver más</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@
                                                 $cant_estudiantes = Estudiante::count();                                                
                                                 @endphp
                                                 <h2 class="text-right"><i class="fa fa-graduation-cap f-left"></i><span>{{$cant_estudiantes}}</span></h2>
-                                                <p class="m-b-0 text-right"><a href="/estudiantes" class="text-white">Ver más</a></p>
+                                                <p class="m-b-0 text-right"><a href="{{route('estudiantes.index')}}" class="text-white">Ver más</a></p>
                                             </div>
                                         </div>
                                     </div>
